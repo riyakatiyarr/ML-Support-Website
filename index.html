@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ML Support - Your Wellness, Our Mission</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <a href="index.html" class="navbar-logo">
+            <img src="img/logo.png" alt="Website Logo" height="90">
+        </a>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#hospitals" class="nav-link">Our Hospitals</a>
+                <a href="#contact" class="nav-link">Contact Us</a>
+                <button class="btn btn--primary btn--sm" onclick="openLoginModal()">Login</button>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+     
+        <!-- Hero Section -->
+        <section id="home" class="section active">
+    <div class="hero">
+            <div class="hero-background-slider">
+                <div class="hero-slide" style="background-image: url('img/hero-image1.jpg');"></div>
+                <div class="hero-slide" style="background-image: url('img/hero-image2.jpg');"></div>
+                <div class="hero-slide" style="background-image: url('img/hero-image3.jpg');"></div>
+            </div>
+            
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h1 class="hero-title">Your Wellness, Our Mission</h1>
+                        <p class="hero-subtitle">Delivering Trusted Medical Support Every Step Of the Way</p>
+                        <p class="hero-description">ML support is a premier healthcare partner committed to delivering seamless, round-the-clock medical service. We redefine healthcare accessibility, making it effortless and reliable. You can get the care you need 24/7 – be it online or in person.</p>
+                        <div class="hero-actions">
+                            <button class="btn btn--primary btn--lg" onclick="scrollToSection('contact')">Get Started</button>
+                            <button class="btn btn--outline btn--lg" onclick="scrollToSection('about')">Learn More</button>
+                        </div>
+                        <div class="hero-stats">
+                            <div class="stat">
+                                <span class="stat-number" data-target="18600">0</span>
+                                <span class="stat-label">Families Served</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number" data-target="300">0</span>
+                                <span class="stat-label">Hospital Partnerships</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    </section>
+        <!-- Services Section -->
+        <div class="services">
+            <div class="container">
+                <h2 class="section-title">Our Healthcare Services</h2>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon">🏥</div>
+                        <h3>24/7 Medical Support</h3>
+                        <p>Round-the-clock medical assistance whenever you need it most. Our dedicated team is always ready to help.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">💻</div>
+                        <h3>Online Consultations</h3>
+                        <p>Connect with specialist doctors from the comfort of your home through secure video consultations.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">🚑</div>
+                        <h3>Free Ambulance Service</h3>
+                        <p>Emergency ambulance service up to 180 km at no cost for all our registered members.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">🩺</div>
+                        <h3>Weekly Diabetic Tests</h3>
+                        <p>Regular monitoring and testing for diabetic patients with comprehensive health tracking.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">💳</div>
+                        <h3>Medical Credit at 0%</h3>
+                        <p>Interest-free medical credit facility for treatments and procedures when you need them most.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">📋</div>
+                        <h3>EMS to Medical Billing</h3>
+                        <p>Comprehensive emergency medical services with transparent billing and insurance support.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Testimonials Section -->
+        <div class="testimonials">
+            <div class="container">
+                <h2 class="section-title">What Our Patients Say</h2>
+                <div class="testimonials-carousel">
+                    <div class="testimonial-track" id="testimonial-track">
+                        <div class="testimonial-card active">
+                            <div class="testimonial-content">
+                                <p>ML Support - The Easy Life makes healthcare simple and accessible. Online consultations are seamless, with professional doctors, accurate prescriptions, and prompt medication delivery. Their dedicated team ensures a hassle-free experience, making them highly recommended for reliable healthcare services.</p>
+                                <div class="testimonial-author">
+                                    <h4>Ankit Gupta</h4>
+                                    <span>Businessman</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-card">
+                            <div class="testimonial-content">
+                                <p>ML Support - The Easy Life has revolutionized our healthcare experience. Their intuitive platform simplifies access to premium medical services. I recently had a consultation with a specialist from Apollo Hospitals, and the service was outstanding—comprehensive medical evaluations, precise prescriptions, and medication delivered right to my door.</p>
+                                <div class="testimonial-author">
+                                    <h4>Pritee Sinha</h4>
+                                    <span>Entrepreneur</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-card">
+                            <div class="testimonial-content">
+                                <p>ML Support - The Easy Life has redefined healthcare accessibility for me. Their intuitive platform makes connecting with top doctors effortless. My recent consultation with a specialist from Amrita Hospital was outstanding—knowledgeable doctors, accurate prescriptions, and doorstep medication delivery.</p>
+                                <div class="testimonial-author">
+                                    <h4>Sanchaita Gupta</h4>
+                                    <span>Philanthropist</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-controls">
+                        <button class="testimonial-btn" onclick="previousTestimonial()">‹</button>
+                        <div class="testimonial-dots">
+                            <span class="dot active" onclick="currentTestimonial(1)"></span>
+                            <span class="dot" onclick="currentTestimonial(2)"></span>
+                            <span class="dot" onclick="currentTestimonial(3)"></span>
+                        </div>
+                        <button class="testimonial-btn" onclick="nextTestimonial()">›</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <div class="about-hero">
+                <h1 class="page-title">About ML Support</h1>
+                <p class="page-subtitle">Committed to excellence in healthcare since 2020</p>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>Our Mission & Vision</h2>
+                    <p>ML support is a premier healthcare partner committed to delivering seamless, round-the-clock medical service. We redefine healthcare accessibility, making it effortless and reliable. You can get the care you need 24/7 – be it online or in person. You will be treated by caring specialist doctors who understand your unique healthcare needs.</p>
+                    
+                    <h3>Why Choose ML Support?</h3>
+                    <ul class="features-list">
+                        <li>24/7 medical support and emergency services available round the clock</li>
+                        <li>Seamless online consultations with certified medical specialists</li>
+                        <li>Free ambulance service coverage up to 180 km for emergencies</li>
+                        <li>Weekly diabetic monitoring and comprehensive health testing</li>
+                        <li>Medical credit facility at 0% interest for approved treatments</li>
+                        <li>Comprehensive EMS to medical billing services with transparency</li>
+                        <li>Partnership with 300+ trusted hospitals across multiple regions</li>
+                        <li>Serving over 18,600 families with reliable healthcare solutions</li>
+                    </ul>
+                    
+                    <h3>Our Commitment</h3>
+                    <p>Since our establishment in 2020, we have been dedicated to transforming healthcare delivery through innovative technology and compassionate care. Our team of medical professionals works tirelessly to ensure that quality healthcare is accessible to everyone, regardless of their location or circumstances.</p>
+                </div>
+                
+                <div class="about-stats">
+                    <div class="stat-card">
+                        <h3 class="stat-number" data-target="18600">0</h3>
+                        <p>Families Served</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3 class="stat-number" data-target="300">0</h3>
+                        <p>Hospital Partners</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>2020</h3>
+                        <p>Established</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>24/7</h3>
+                        <p>Medical Support</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>180km</h3>
+                        <p>Free Ambulance</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>0%</h3>
+                        <p>Interest Credit</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hospitals Section -->
+    <section id="hospitals" class="section">
+    <div class="container">
+        <div class="hospitals-hero">
+            <h1 class="page-title">Our Hospital Partners</h1>
+            <p class="page-subtitle">Trusted healthcare facilities across multiple regions providing comprehensive medical care.</p>
+        </div>
+        
+        <div class="hospitals-filters">
+            <div class="filter-group">
+                <label for="location-filter">Filter by Location:</label>
+                <select id="location-filter" class="form-control">
+                    <option value="">All Locations</option>
+                    <option value="Rampurhat">Rampurhat</option>
+                    <option value="Suri">Suri</option>
+                    <option value="Bolpur">Bolpur</option>
+                    <option value="Burdwan">Burdwan</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <label for="specialty-filter">Filter by Specialty:</label>
+                <select id="specialty-filter" class="form-control">
+                    <option value="">All Specialties</option>
+                    <option value="General Hospital">General Hospital</option>
+                    <option value="Multispeciality">Multispeciality</option>
+                    <option value="Nursing Home">Nursing Home</option>
+                </select>
+            </div>
+        </div>
+        
+        <div class="hospitals-grid" id="hospitals-grid">
+            
+            <div class="hospital-card" data-location="Rampurhat" data-specialty="General Hospital">
+                <div class="hospital-image" style="background-image: url('img/ncdutta.jpeg');"></div>
+                <div class="hospital-content">
+                    <div class="hospital-header">
+                        <h3>Dr. N.C. Dutta Memorial Hospital</h3>
+                        <span class="hospital-specialty">General Hospital</span>
+                    </div>
+                    <div class="hospital-info">
+                        <p><strong>Location:</strong> Rampurhat</p>
+                        <p><strong>Services:</strong> Emergency care, general medicine, surgery, diagnostic services.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="hospital-card" data-location="Rampurhat" data-specialty="Multispeciality">
+                <div class="hospital-image" style="background-image: url('img/noH.png');"></div>
+                <div class="hospital-content">
+                    <div class="hospital-header">
+                        <h3>Mohor Medimart Hospital & Medicine</h3>
+                        <span class="hospital-specialty">Multispeciality</span>
+                    </div>
+                    <div class="hospital-info">
+                        <p><strong>Location:</strong> Rampurhat</p>
+                        <p><strong>Services:</strong> Cardiology, orthopedics, pediatrics, pharmacy services.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="hospital-card" data-location="Rampurhat" data-specialty="Nursing Home">
+                <div class="hospital-image" style="background-image: url('img/niramoy.jpeg');"></div>
+                <div class="hospital-content">
+                    <div class="hospital-header">
+                        <h3>Niramoy Nursing Home</h3>
+                        <span class="hospital-specialty">Nursing Home</span>
+                    </div>
+                    <div class="hospital-info">
+                        <p><strong>Location:</strong> Rampurhat</p>
+                        <p><strong>Services:</strong> Patient care, rehabilitation, nursing services.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="hospital-card" data-location="Suri" data-specialty="Nursing Home">
+                <div class="hospital-image" style="background-image: url('img/anandmayee.jpeg');"></div>
+                <div class="hospital-content">
+                    <div class="hospital-header">
+                        <h3>Anandamayee Nursing Home</h3>
+                        <span class="hospital-specialty">Nursing Home</span>
+                    </div>
+                    <div class="hospital-info">
+                        <p><strong>Location:</strong> Suri</p>
+                        <p><strong>Services:</strong> Maternity care, general nursing, patient support.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="hospital-card" data-location="Bolpur" data-specialty="Multispeciality">
+                <div class="hospital-image" style="background-image: url('img/SSB.png');"></div>
+                <div class="hospital-content">
+                    <div class="hospital-header">
+                        <h3>Santiniketan Sebaniketan</h3>
+                        <span class="hospital-specialty">Multispeciality</span>
+                    </div>
+                    <div class="hospital-info">
+                        <p><strong>Location:</strong> Bolpur</p>
+                        <p><strong>Services:</strong> Comprehensive medical care, diagnostic services.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="hospital-card" data-location="Burdwan" data-specialty="Multispeciality">
+                <div class="hospital-image" style="background-image: url('img/bengalfaith.avif');"></div>
+                <div class="hospital-content">
+                    <div class="hospital-header">
+                        <h3>Bengal FAITH Hospital</h3>
+                        <span class="hospital-specialty">Multispeciality</span>
+                    </div>
+                    <div class="hospital-info">
+                        <p><strong>Location:</strong> Burdwan</p>
+                        <p><strong>Services:</strong> Advanced medical treatments, surgical procedures.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <div class="contact-hero">
+                <h1 class="page-title">Contact Us</h1>
+                <p class="page-subtitle">Get in touch for any healthcare assistance or questions about our services</p>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-form">
+                    <h2>Send us a Message</h2>
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <label for="name" class="form-label">Full Name</label>
+                            <input type="text" id="name" name="name" class="form-control" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email Address</label>
+                            <input type="email" id="email" name="email" class="form-control" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone" class="form-label">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" class="form-control" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="service" class="form-label">Service Needed</label>
+                            <select id="service" name="service" class="form-control" required>
+                                <option value="">Select a service</option>
+                                <option value="consultation">Online Consultation</option>
+                                <option value="ambulance">Ambulance Service</option>
+                                <option value="diabetic">Diabetic Testing</option>
+                                <option value="credit">Medical Credit</option>
+                                <option value="hospital">Hospital Partnership</option>
+                                <option value="emergency">Emergency Services</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea id="message" name="message" rows="5" class="form-control" required placeholder="Please describe your healthcare needs or questions..."></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn--primary btn--full-width">Send Message</button>
+                    </form>
+                </div>
+                
+                <div class="contact-info">
+                    <h2>Contact Information</h2>
+                    
+                    <div class="contact-item">
+                        <h3>📞 Phone Numbers</h3>
+                        <p><a href="tel:18008896525">1800-8896-525</a> (Toll Free - 24/7)</p>
+                        <p><a href="tel:+916262666631">+91 626-266-6631</a> (Direct Line)</p>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <h3>✉️ Email</h3>
+                        <p><a href="mailto:info@mlsupport.org">info@mlsupport.org</a></p>
+                        <p>We typically respond within 2-4 hours during business hours</p>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <h3>🕒 Office Hours</h3>
+                        <p><strong>24/7 Medical Support Available</strong></p>
+                        <p>Office Hours: Monday - Saturday</p>
+                        <p>9:00 AM - 6:00 PM IST</p>
+                        <p>Sunday: Emergency Services Only</p>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <h3>🚑 Emergency Services</h3>
+                        <p>Call us anytime for emergency medical assistance</p>
+                        <p><strong>Free ambulance service up to 180 km</strong></p>
+                        <p>Available 24/7 for registered members</p>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <h3>🏥 Service Areas</h3>
+                        <p>Rampurhat • Suri • Bolpur • Burdwan</p>
+                        <p>Expanding to more locations soon</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Login Modal -->
+    <div id="login-modal" class="modal hidden">
+        <div class="modal-overlay" onclick="closeLoginModal()"></div>
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Patient Portal Access</h2>
+                <button class="modal-close" onclick="closeLoginModal()">&times;</button>
+            </div>
+            
+            <div class="modal-body">
+                <div class="login-tabs">
+                    <button class="tab-btn active" onclick="showLoginTab('login')">Login</button>
+                    <button class="tab-btn" onclick="showLoginTab('register')">Register</button>
+                </div>
+                
+                <div id="login-tab" class="tab-content active">
+                    <form id="login-form">
+                        <div class="form-group">
+                            <label for="login-email" class="form-label">Email Address</label>
+                            <input type="email" id="login-email" name="email" class="form-control" required 
+                                   placeholder="Enter your email address">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="login-password" class="form-label">Password</label>
+                            <input type="password" id="login-password" name="password" class="form-control" required 
+                                   placeholder="Enter your password">
+                        </div>
+                        
+                        <div class="form-group">
+                            <a href="#" class="forgot-password">Forgot your password?</a>
+                        </div>
+                        
+                        <button type="submit" class="btn btn--primary btn--full-width">Access Patient Portal</button>
+                    </form>
+                </div>
+                
+                <div id="register-tab" class="tab-content">
+                    <form id="register-form">
+                        <div class="form-group">
+                            <label for="register-name" class="form-label">Full Name</label>
+                            <input type="text" id="register-name" name="name" class="form-control" required 
+                                   placeholder="Enter your full name">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="register-email" class="form-label">Email Address</label>
+                            <input type="email" id="register-email" name="email" class="form-control" required 
+                                   placeholder="Enter your email address">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="register-phone" class="form-label">Phone Number</label>
+                            <input type="tel" id="register-phone" name="phone" class="form-control" required 
+                                   placeholder="Enter your phone number">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="register-password" class="form-label">Password</label>
+                            <input type="password" id="register-password" name="password" class="form-control" required 
+                                   placeholder="Create a secure password (min. 8 characters)">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="confirm-password" class="form-label">Confirm Password</label>
+                            <input type="password" id="confirm-password" name="confirmPassword" class="form-control" required 
+                                   placeholder="Confirm your password">
+                        </div>
+                        
+                        <button type="submit" class="btn btn--primary btn--full-width">Create Account</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>ML Support</h3>
+                    <p class="text-gradient">Your Wellness, Our Mission</p>
+                    <p>Delivering Trusted Medical Support Every Step Of the Way. Since 2020, we've been committed to making healthcare accessible, reliable, and compassionate for everyone.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#hospitals">Our Hospitals</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
+                        <li><a href="#" onclick="openLoginModal()">Patient Portal</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Our Services</h4>
+                    <ul>
+                        <li>24/7 Medical Support</li>
+                        <li>Online Consultations</li>
+                        <li>Free Ambulance Service</li>
+                        <li>Weekly Diabetic Tests</li>
+                        <li>Medical Credit (0% Interest)</li>
+                        <li>EMS & Medical Billing</li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contact Information</h4>
+                    <p>📞 <a href="tel:18008896525">1800-8896-525</a> (Toll Free)</p>
+                    <p>📞 <a href="tel:+916262666631">+91 626-266-6631</a></p>
+                    <p>✉️ <a href="mailto:info@mlsupport.org">info@mlsupport.org</a></p>
+                    <p>🏥 300+ Hospital Partners</p>
+                    <p>👨‍👩‍👧‍👦 18,600+ Families Served</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 ML Support. All rights reserved. | Committed to healthcare excellence since 2020.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
